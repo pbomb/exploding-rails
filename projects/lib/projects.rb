@@ -1,7 +1,9 @@
 require 'rom'
 require 'rom-sql'
 
-require_relative 'projects/relations/projects'
+# require_relative 'projects/relations/projects'
+require_relative 'projects/repositories/projects'
+require_relative 'projects/project'
 
 module Projects
   DB = ROM.container(:sql, 'postgres://localhost/projects_dev') do |config|
